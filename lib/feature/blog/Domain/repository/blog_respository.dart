@@ -1,9 +1,11 @@
 import 'dart:io';
 
-import 'package:blog_app/Core/errors/failure.dart';
-import 'package:blog_app/feature/blog/Domain/Entities/blogs.dart';
-import 'package:blog_app/feature/blog/Domain/Entities/friends.dart';
+import 'package:blog_app_vs/Core/errors/failure.dart';
+import 'package:blog_app_vs/feature/blog/Domain/Entities/blogs.dart';
+
 import 'package:fpdart/fpdart.dart';
+
+import '../Entities/Comments.dart';
 
 abstract interface class BlogRespository
 {
@@ -16,6 +18,9 @@ abstract interface class BlogRespository
     required File imageUrl,});
 
   Future<Either<failure,List<Blog>>> getAllBlogsRep();
+  Future<Either<failure,List<Comments>>> getComments(String blogId);
   Future<Either<failure,String>> logOutRep();
   Future<Either<failure,String>> updateLikes(String blogId,bool status);
+  Future<Either<failure,Comments>> updateComments(String blogId,String comment);
+
 }

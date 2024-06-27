@@ -1,10 +1,10 @@
 import 'dart:io';
 
-import 'package:blog_app/Core/Cubits/user_cubit.dart';
-import 'package:blog_app/Core/Utils/image_picker.dart';
-import 'package:blog_app/feature/auth/Presentation/bloc/auth_bloc.dart';
-import 'package:blog_app/feature/blog/Presentaion/Widgets/Button.dart';
-import 'package:blog_app/feature/blog/Presentaion/blog_bloc/blog_bloc.dart';
+import 'package:blog_app_vs/Core/Cubits/user_cubit.dart';
+import 'package:blog_app_vs/Core/Utils/image_picker.dart';
+
+import 'package:blog_app_vs/feature/blog/Presentaion/Widgets/Button.dart';
+import 'package:blog_app_vs/feature/blog/Presentaion/blog_bloc/blog_bloc.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

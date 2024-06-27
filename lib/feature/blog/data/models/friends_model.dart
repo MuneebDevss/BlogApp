@@ -1,4 +1,4 @@
-import 'package:blog_app/feature/blog/Domain/Entities/friends.dart';
+import 'package:blog_app_vs/feature/blog/Domain/Entities/friends.dart';
 
 class FriendsModel extends Friends{
   FriendsModel({required super.id});

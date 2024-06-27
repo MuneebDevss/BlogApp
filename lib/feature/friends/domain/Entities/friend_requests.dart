@@ -1,7 +1,6 @@
 
 
-// Define the interface
- import 'package:uuid/uuid.dart';
+
 
 class FriendRequest {
   final String firstId;

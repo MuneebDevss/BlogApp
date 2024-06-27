@@ -1,4 +1,5 @@
-import 'package:blog_app/feature/blog/data/models/like_model.dart';
+import 'package:blog_app_vs/feature/blog/Domain/Entities/Likes.dart';
+
 
 import '../../Domain/Entities/blogs.dart';
 
@@ -53,7 +54,7 @@ class BlogModel extends Blog {
     List<String>? topic,
     String? imageUrl,
     String? UploaderName,
-    List<LikeModel>? likes,
+    List<Likes>? likes,
   }) {
     return BlogModel(
       uploaderName: UploaderName?? this.uploaderName,

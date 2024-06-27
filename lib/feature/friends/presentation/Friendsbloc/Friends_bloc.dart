@@ -1,7 +1,7 @@
 
 
-import 'package:blog_app/feature/friends/domain/FriendsUseCase/aor_use_case.dart';
-import 'package:blog_app/feature/friends/domain/FriendsUseCase/get_all_Users.dart';
+import 'package:blog_app_vs/feature/friends/domain/FriendsUseCase/aor_use_case.dart';
+import 'package:blog_app_vs/feature/friends/domain/FriendsUseCase/get_all_Users.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

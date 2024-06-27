@@ -1,5 +1,5 @@
-import 'package:blog_app/Core/errors/exception.dart';
-import 'package:blog_app/Core/Models/user_model.dart';
+import 'package:blog_app_vs/Core/errors/exception.dart';
+import 'package:blog_app_vs/Core/Models/user_model.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 abstract interface class AuthDataSource {
@@ -37,7 +37,7 @@ class Auth implements AuthDataSource {
 
       if (response.user == null) {
         throw const ServerException('User is null');
-        print('Supabase SignUp Error:');
+
       }
       print('SignUp successful: ${response.user!.id}');
       return UserModel.fromJson(response.user!.toJson());
@@ -64,7 +64,7 @@ class Auth implements AuthDataSource {
       
       if (response.user == null) {
         throw const ServerException('User is null');
-        print('Supabase SignUp Error:');
+
       }
       print('SignUp successful: ${response.user!.id}');
       return UserModel.fromJson(response.user!.toJson());

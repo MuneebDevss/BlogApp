@@ -1,5 +1,5 @@
 import 'package:badges/badges.dart' as badges;
-import 'package:blog_app/Core/Theme/Palatte.dart';
+import 'package:blog_app_vs/Core/Theme/Palatte.dart';
 import 'package:flutter/material.dart';
 Widget badge()
 {

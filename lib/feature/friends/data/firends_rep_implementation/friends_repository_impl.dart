@@ -1,10 +1,9 @@
-import 'package:blog_app/Core/Models/user_model.dart';
-import 'package:blog_app/Core/errors/exception.dart';
-import 'package:blog_app/Core/errors/failure.dart';
-import 'package:blog_app/feature/friends/data/Entities/friend_request_impl.dart';
-import 'package:blog_app/feature/friends/data/data_source/friends_remote_data_source.dart';
-import 'package:blog_app/feature/friends/domain/Entities/friend_requests.dart';
-import 'package:blog_app/feature/friends/domain/freinds_repository/friends_repository.dart';
+import 'package:blog_app_vs/Core/Models/user_model.dart';
+import 'package:blog_app_vs/Core/errors/exception.dart';
+import 'package:blog_app_vs/Core/errors/failure.dart';
+import 'package:blog_app_vs/feature/friends/data/Entities/friend_request_impl.dart';
+import 'package:blog_app_vs/feature/friends/data/data_source/friends_remote_data_source.dart';
+import 'package:blog_app_vs/feature/friends/domain/freinds_repository/friends_repository.dart';
 import 'package:fpdart/src/either.dart';
 
 class FriendsRepositoryImpl implements FriendsRepository{

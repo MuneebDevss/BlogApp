@@ -1,8 +1,8 @@
-import 'package:blog_app/Core/errors/exception.dart';
-import 'package:blog_app/Core/errors/failure.dart';
-import 'package:blog_app/Core/network/connection_checker.dart';
-import 'package:blog_app/feature/auth/Domain/auth_repository/auth_repository.dart';
-import 'package:blog_app/Core/Models/user_model.dart';
+import 'package:blog_app_vs/Core/errors/exception.dart';
+import 'package:blog_app_vs/Core/errors/failure.dart';
+import 'package:blog_app_vs/Core/network/connection_checker.dart';
+import 'package:blog_app_vs/feature/auth/Domain/auth_repository/auth_repository.dart';
+import 'package:blog_app_vs/Core/Models/user_model.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import '../datasource/auth_remote_data_source.dart';
