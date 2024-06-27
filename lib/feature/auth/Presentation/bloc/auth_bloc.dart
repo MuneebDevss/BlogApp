@@ -1,6 +1,6 @@
-import 'package:blog_app/Core/Cubits/user_cubit.dart';
-import 'package:blog_app/feature/auth/Domain/auth_use_cases/Sign_in_use_Case.dart';
-import 'package:blog_app/feature/blog/Domain/UseCase/log_out_use_case.dart';
+import 'package:blog_app_vs/Core/Cubits/user_cubit.dart';
+import 'package:blog_app_vs/feature/auth/Domain/auth_use_cases/Sign_in_use_Case.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../Core/Entities/User.dart';

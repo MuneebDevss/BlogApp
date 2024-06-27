@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:blog_app/Core/Models/user_model.dart';
-import 'package:blog_app/Core/errors/failure.dart';
-import 'package:blog_app/feature/friends/domain/Entities/friend_requests.dart';
+import 'package:blog_app_vs/Core/Models/user_model.dart';
+import 'package:blog_app_vs/Core/errors/failure.dart';
+import 'package:blog_app_vs/feature/friends/domain/Entities/friend_requests.dart';
 import 'package:fpdart/fpdart.dart';
 
 abstract interface class FriendsRepository

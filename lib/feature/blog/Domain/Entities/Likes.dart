@@ -1,6 +1,10 @@
 class Likes
 {
-  String blog_id;
+  String name;
   String UserId;
-  Likes ({required this.blog_id,required this.UserId});
+  Likes ({required this.name,required this.UserId});
+  factory Likes.fromjson(Map<String,dynamic> map)
+  {
+    return Likes(name: map['name'], UserId: map['likedby']);
+  }
 }

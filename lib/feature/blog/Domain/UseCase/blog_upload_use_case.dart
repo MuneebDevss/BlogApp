@@ -1,7 +1,7 @@
 import 'dart:io';
-import 'package:blog_app/Core/UseCase.dart';
-import 'package:blog_app/Core/errors/failure.dart';
-import 'package:blog_app/feature/blog/Domain/repository/blog_respository.dart';
+import 'package:blog_app_vs/Core/UseCase.dart';
+import 'package:blog_app_vs/Core/errors/failure.dart';
+import 'package:blog_app_vs/feature/blog/Domain/repository/blog_respository.dart';
 import 'package:fpdart/fpdart.dart';
 import '../Entities/blogs.dart';
 

@@ -1,5 +1,5 @@
-import 'package:blog_app/Core/errors/failure.dart';
-import 'package:blog_app/feature/blog/Domain/repository/blog_respository.dart';
+import 'package:blog_app_vs/Core/errors/failure.dart';
+import 'package:blog_app_vs/feature/blog/Domain/repository/blog_respository.dart';
 
 import 'package:fpdart/src/either.dart';
 

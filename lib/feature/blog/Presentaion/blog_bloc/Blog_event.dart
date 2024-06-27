@@ -15,9 +15,22 @@ final class UploadBlog extends BlogEvent{
 }
 final class GetBlogs extends BlogEvent
 {}
-final class BlocLogOut extends BlogEvent{}
+
 final class UpdateLikesEvent extends BlogEvent{
   final String blogId;
   final bool status;
   UpdateLikesEvent( {required this.status, required this.blogId});
+}
+//comments events
+final class UpdateCommentEvent extends BlogEvent
+{
+  final String blogId;
+  final String comment;
+
+  UpdateCommentEvent({required this.blogId, required this.comment});
+}
+class GetComments extends BlogEvent {
+  final String BlogId;
+
+  GetComments({required this.BlogId});
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:blog_app/Core/Theme/Palatte.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:blog_app_vs/Core/Theme/Palatte.dart';
 class AppTheme {
   static OutlineInputBorder _border([Color color = AppPallete.borderColor]) => OutlineInputBorder(
     borderRadius: const BorderRadius.all(Radius.circular(10)),

@@ -1,6 +1,6 @@
-import 'package:blog_app/Core/UseCase.dart';
-import 'package:blog_app/Core/errors/failure.dart';
-import 'package:blog_app/feature/friends/domain/Entities/friend_requests.dart';
+import 'package:blog_app_vs/Core/UseCase.dart';
+import 'package:blog_app_vs/Core/errors/failure.dart';
+import 'package:blog_app_vs/feature/friends/domain/Entities/friend_requests.dart';
 import 'package:fpdart/fpdart.dart';
 
 import '../freinds_repository/friends_repository.dart';

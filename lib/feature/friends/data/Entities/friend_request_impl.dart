@@ -1,5 +1,5 @@
-import 'package:uuid/uuid.dart';
-import 'package:blog_app/feature/friends/domain/Entities/friend_requests.dart';
+
+import 'package:blog_app_vs/feature/friends/domain/Entities/friend_requests.dart';
 
 class FriendRequestImpl extends FriendRequest {
   FriendRequestImpl({

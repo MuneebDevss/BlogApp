@@ -1,16 +1,19 @@
 import 'dart:io';
 
-import 'package:blog_app/feature/blog/Domain/Entities/friends.dart';
-import 'package:blog_app/feature/blog/data/models/friends_model.dart';
-import 'package:blog_app/feature/blog/data/models/like_model.dart';
+import 'package:blog_app_vs/feature/blog/Domain/Entities/Comments.dart';
+import 'package:blog_app_vs/feature/blog/Domain/Entities/friends.dart';
+import 'package:blog_app_vs/feature/blog/data/models/CommentModel.dart';
+
 import 'package:uuid/uuid.dart';
-import 'package:blog_app/Core/errors/exception.dart';
-import 'package:blog_app/Core/errors/failure.dart';
-import 'package:blog_app/feature/blog/Domain/Entities/blogs.dart';
-import 'package:blog_app/feature/blog/Domain/repository/blog_respository.dart';
-import 'package:blog_app/feature/blog/data/models/blog_model.dart';
-import 'package:blog_app/feature/blog/data/data_source/blog_remote_data_source.dart';
+import 'package:blog_app_vs/Core/errors/exception.dart';
+import 'package:blog_app_vs/Core/errors/failure.dart';
+import 'package:blog_app_vs/feature/blog/Domain/Entities/blogs.dart';
+import 'package:blog_app_vs/feature/blog/Domain/repository/blog_respository.dart';
+import 'package:blog_app_vs/feature/blog/data/models/blog_model.dart';
+import 'package:blog_app_vs/feature/blog/data/data_source/blog_remote_data_source.dart';
 import 'package:fpdart/fpdart.dart';
+
+import '../../Domain/Entities/Likes.dart';
 
 class BlogRepImpl implements BlogRespository {
   final BlogRemoteDataSourceImpl impl;
@@ -74,8 +77,8 @@ class BlogRepImpl implements BlogRespository {
      }
      for(BlogModel model in res)
      {
-       List<LikeModel> likes=await impl.getLikes(model.id);
-
+       List<Likes> likes=await impl.getLikes(model.id);
+       model.likes=likes;
      }
      return Right(models);
       }
@@ -94,5 +97,30 @@ class BlogRepImpl implements BlogRespository {
     on ServerException catch(e){
       return Left(failure(e.message));
     }
+  }
+
+  @override
+  Future<Either<failure, CommentModel>> updateComments(String blogId, String comment) async {
+   try{
+     final res=await impl.updateComments(blogId, comment);
+     return Right(res);
+   }
+       on ServerException catch(e)
+       {
+         return Left(failure(e.message));
+       }
+  }
+
+  @override
+  Future<Either<failure, List<Comments>>> getComments(String blogId) async {
+    // TODO: implement getComments
+    try{
+      final res=await impl.getComments(blogId);
+      return Right(res);
+    }
+        on ServerException catch(e)
+        {
+          return Left(failure(e.message));
+        }
   }
 }

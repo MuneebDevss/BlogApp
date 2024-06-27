@@ -1,10 +1,10 @@
 
-import 'package:blog_app/Core/Theme/Palatte.dart';
-import 'package:blog_app/Core/Utils/snack_bar.dart';
-import 'package:blog_app/Core/Widgets/loading.dart';
-import 'package:blog_app/feature/auth/Presentation/Widgets/AuthWidgets.dart';
-import 'package:blog_app/feature/auth/Presentation/bloc/auth_bloc.dart';
-import 'package:blog_app/feature/blog/Presentaion/Pages/Blogs_page.dart';
+import 'package:blog_app_vs/Core/Theme/Palatte.dart';
+import 'package:blog_app_vs/Core/Utils/snack_bar.dart';
+import 'package:blog_app_vs/Core/Widgets/loading.dart';
+import 'package:blog_app_vs/feature/auth/Presentation/Widgets/AuthWidgets.dart';
+import 'package:blog_app_vs/feature/auth/Presentation/bloc/auth_bloc.dart';
+import 'package:blog_app_vs/feature/blog/Presentaion/Pages/Blogs_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 class SignUp extends StatefulWidget {

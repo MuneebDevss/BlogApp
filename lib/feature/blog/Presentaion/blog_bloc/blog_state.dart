@@ -1,7 +1,9 @@
 part of 'blog_bloc.dart';
 
-@immutable
-abstract class BlogState {}
+
+abstract class BlogState {
+
+}
 
 final class BlogInitial extends BlogState {}
 final class BlogLoading extends BlogState
@@ -35,14 +37,29 @@ final class AchievementFailureState extends BlogState
 
   AchievementFailureState({required this.message});
 }
-final class LogOutSuccessState extends BlogState
+//Logout States
+
+//comment States
+class CommentsAchievedState extends BlogState{
+  final List<Comments> comments;
+
+  CommentsAchievedState(this.comments);
+}
+class CommentsNotAchievedState extends BlogState
 {
   final String message;
 
-  LogOutSuccessState({required this.message});
+  CommentsNotAchievedState({required this.message});
 }
-final class LogOutFailureState extends BlogState{
+class CommentsUpdatedState extends BlogState
+{
+  final Comments comment;
+
+  CommentsUpdatedState({required this.comment});
+}
+class CommentsNotUpdatedState extends BlogState
+{
   final String message;
 
-  LogOutFailureState({required this.message});
+  CommentsNotUpdatedState({required this.message});
 }
